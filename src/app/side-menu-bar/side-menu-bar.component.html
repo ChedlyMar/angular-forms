@@ -3,21 +3,20 @@
         <li class="menuHeading">MENU</li>
         <li>
             <div class="link">
-                <i class="fas fa-rocket"></i>
+                <i class="material-icons">dashboard</i>
                 <div class="hide" (click)="toggleDashboard()">Dashboard</div>
-                </div>
+            </div>
             <ul class="submenu" *ngIf="dashboardOpen">
                 <li><a  >Analitics</a></li>
                 <li><a href="">Commerce</a></li>
                 <li><a href="">Sales</a></li>
                 <li><a href="">Minimal</a></li>
-                <li><a href="">CRM</a></li>
-                
+                <li><a href="">CRM</a></li>                
             </ul>
         </li>
         <li>
             <div class="link">
-                <i class="fas fa-file-alt"></i> 
+                <i class="material-icons">pages</i>
                 <div class="hide" (click)="togglePage()">Page</div>
             </div>
             <ul class="submenu" *ngIf="pageOpen">
@@ -30,7 +29,9 @@
             </ul>
         </li>
         <li>
-            <div class="link"><i class="fas fa-crop-alt"></i>
+            
+            <div class="link">
+                <i class="material-icons">settings_applications</i>
                 <div class="hide" (click)="toggleAplication()">Application</div></div>
             <ul class="submenu" *ngIf="applicationOpen">
                 <li><a href="">Analitics</a></li>
@@ -47,7 +48,7 @@
         <div class="hide">ui components</div></li>
         <li>
             <div class="link">
-                <i class="fab fa-elementor"></i>
+                <i class="material-icons">assessment</i>
                 <div class="hide" (click)="toggleElements()">Elements</div>
             </div>
             <ul class="submenu" *ngIf="elementsOpen">
@@ -61,7 +62,7 @@
         </li>
         <li>
             <div class="link">
-                <i class="fas fa-car-alt"></i>
+                <i class="material-icons">compare</i>
                  <div class="hide" (click)="toggleComponents()">Components</div>
             </div>
             <ul class="submenu" *ngIf="componentsOpen">
@@ -75,7 +76,7 @@
         </li>
         <li>
             <div class="link">
-                <i class="far fa-bookmark"></i>
+                <i class="material-icons">tables</i>
                 <div class="hide" (click)="toggleTables()">Tables</div>
             </div>
             <ul class="submenu" *ngIf="tableOpen">
@@ -94,25 +95,25 @@
                   
     <li>
         <div class="link submenu">
-            <i class="fas fa-chart-line"></i>
+            <i class="material-icons">show_chart</i>
             <div class="hide">Chart Boxes 1</div>
         </div>
     </li>
     <li>
         <div class="link submenu">
-            <i class="fas fa-chart-line"></i>
+            <i class="material-icons">show_chart</i>
             <div class="hide">Chart Boxes 2</div>
         </div>
     </li>
     <li>
         <div class="link submenu">
-            <i class="fas fa-chart-line"></i>
+            <i class="material-icons">show_chart</i>
             <div class="hide">Chart Boxe 3</div>
         </div>
     </li>
     <li>
         <div class="link submenu">
-            <i class="fas fa-chart-line"></i>
+            <i class="material-icons">show_chart</i>
             <div class="hide">Profile Boxes</div>
         </div>
     </li>
@@ -122,7 +123,7 @@
     <li class="menuHeading">forms</li>
     <li>
         <div class="link">
-            <i class="far fa-lightbulb"></i>
+            <i class="material-icons">transform</i>
             <div class="hide"(click)="toggleFElements()">Elements</div>
         </div>
         <ul class="submenu" *ngIf="elemntFOpen">
@@ -134,7 +135,7 @@
     </li>
     <li>
         <div class="link">
-            <i class="fas fa-gamepad"></i>
+            <i class="material-icons">widgets</i>
             <div class="hide"(click)="toggleWidgets()">Widgets</div>
         </div>
         <ul class="submenu" *ngIf="widgetsOpen">
