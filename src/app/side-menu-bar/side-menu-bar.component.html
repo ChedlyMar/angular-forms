@@ -1,0 +1,156 @@
+<div id="l" class="sidemenubar">
+    <ul id="accordion" class="accordion">                
+        <li class="menuHeading">MENU</li>
+        <li>
+            <div class="link">
+                <i class="fas fa-rocket"></i>
+                <div class="hide" (click)="toggleDashboard()">Dashboard</div>
+                </div>
+            <ul class="submenu" *ngIf="dashboardOpen">
+                <li><a  >Analitics</a></li>
+                <li><a href="">Commerce</a></li>
+                <li><a href="">Sales</a></li>
+                <li><a href="">Minimal</a></li>
+                <li><a href="">CRM</a></li>
+                
+            </ul>
+        </li>
+        <li>
+            <div class="link">
+                <i class="fas fa-file-alt"></i> 
+                <div class="hide" (click)="togglePage()">Page</div>
+            </div>
+            <ul class="submenu" *ngIf="pageOpen">
+                <li><a [routerLink]="['./login']">Login</a></li>
+                <li><a href="pages\login-boxed.html">Login Boxed</a></li>
+                <li><a [routerLink]="['./register']">Registred</a></li>
+                <li><a href="pages\register-boxed.html">Registred Boxed</a></li>
+                <li><a [routerLink]="['./password']">Password</a></li>
+                <li><a href="pages\password-boxed.html">Password Boxed</a></li>
+            </ul>
+        </li>
+        <li>
+            <div class="link"><i class="fas fa-crop-alt"></i>
+                <div class="hide" (click)="toggleAplication()">Application</div></div>
+            <ul class="submenu" *ngIf="applicationOpen">
+                <li><a href="">Analitics</a></li>
+                <li><a href="">Commerce</a></li>
+                <li><a href="">Sales</a></li>
+                <li><a href="">Minimal</a></li>
+                <li><a href="">CRM</a></li>
+                
+            </ul>
+        </li>
+    
+
+    <li class="menuHeading">
+        <div class="hide">ui components</div></li>
+        <li>
+            <div class="link">
+                <i class="fab fa-elementor"></i>
+                <div class="hide" (click)="toggleElements()">Elements</div>
+            </div>
+            <ul class="submenu" *ngIf="elementsOpen">
+                <li><a href="">Analitics</a></li>
+                <li><a href="">Commerce</a></li>
+                <li><a href="">Sales</a></li>
+                <li><a href="">Minimal</a></li>
+                <li><a href="">CRM</a></li>
+                
+            </ul>
+        </li>
+        <li>
+            <div class="link">
+                <i class="fas fa-car-alt"></i>
+                 <div class="hide" (click)="toggleComponents()">Components</div>
+            </div>
+            <ul class="submenu" *ngIf="componentsOpen">
+                <li><a >Login</a></li>
+                <li><a href="pages\login-boxed.html">Login Boxed</a></li>
+                <li><a href="pages\register.html">Registred</a></li>
+                <li><a href="pages\register-boxed.html">Registred Boxed</a></li>
+                <li><a href="pages\password.html">Password</a></li>
+                <li><a href="pages\password-boxed.html">Password Boxed</a></li>
+            </ul>
+        </li>
+        <li>
+            <div class="link">
+                <i class="far fa-bookmark"></i>
+                <div class="hide" (click)="toggleTables()">Tables</div>
+            </div>
+            <ul class="submenu" *ngIf="tableOpen">
+                <li><a href="">Analitics</a></li>
+                <li><a href="">Commerce</a></li>
+                <li><a href="">Sales</a></li>
+                <li><a href="">Minimal</a></li>
+                <li><a href="">CRM</a></li>
+                
+            </ul>
+        </li>
+        
+    <li class="menuHeading">
+        <div class="hide"> dashboard widgets</div>
+    </li>
+                  
+    <li>
+        <div class="link submenu">
+            <i class="fas fa-chart-line"></i>
+            <div class="hide">Chart Boxes 1</div>
+        </div>
+    </li>
+    <li>
+        <div class="link submenu">
+            <i class="fas fa-chart-line"></i>
+            <div class="hide">Chart Boxes 2</div>
+        </div>
+    </li>
+    <li>
+        <div class="link submenu">
+            <i class="fas fa-chart-line"></i>
+            <div class="hide">Chart Boxe 3</div>
+        </div>
+    </li>
+    <li>
+        <div class="link submenu">
+            <i class="fas fa-chart-line"></i>
+            <div class="hide">Profile Boxes</div>
+        </div>
+    </li>
+   
+                 
+        
+    <li class="menuHeading">forms</li>
+    <li>
+        <div class="link">
+            <i class="far fa-lightbulb"></i>
+            <div class="hide"(click)="toggleFElements()">Elements</div>
+        </div>
+        <ul class="submenu" *ngIf="elemntFOpen">
+            <li><a href="">Controls</a></li>
+            <li><a href="">Layouts</a></li>
+            <li><a href="">Validation</a></li>
+            <li><a href="">Wizard</a></li>                    
+        </ul>
+    </li>
+    <li>
+        <div class="link">
+            <i class="fas fa-gamepad"></i>
+            <div class="hide"(click)="toggleWidgets()">Widgets</div>
+        </div>
+        <ul class="submenu" *ngIf="widgetsOpen">
+            <li><a href="pages\login.html">Datepicker</a></li>
+            <li><a href="pages\login-boxed.html">Range Slider</a></li>
+            <li><a href="pages\register.html">Input Selects</a></li>
+            <li><a href="pages\register-boxed.html">Toggle Switsh</a></li>
+            <li><a href="pages\password.html">MySwing Editor</a></li>
+            <li><a href="pages\password-boxed.html">Input Mask</a></li>
+            <li><a href="pages\password-boxed.html">Clipard</a></li>
+            <li><a href="pages\password-boxed.html">Textarea Autosize</a></li>
+        </ul>
+    </li>
+    
+
+    </ul>
+
+  
+</div>
